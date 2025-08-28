@@ -52,4 +52,25 @@
       text-decoration: none;
     }
   }
+  .hiro-pic {
+    width: 1200px;
+    height: 524px;
+    opacity: 1;
+    border-radius: 16px;
+
+    /* Padding (assuming Space/4000 = 4px, Space/600 = 16px) */
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    object-fit: cover; /* makes the image fill without distortion */
+
+    margin-top: 20px;
+    margin-left: auto; /* center horizontally */
+    margin-right: auto;
+    display: block;
+
+    background: var(--Background-Utilities-Scrim, #ffffffcc);
+  }
 }
