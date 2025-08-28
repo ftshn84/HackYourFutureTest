@@ -22,14 +22,23 @@
   .menu-icon {
     display: none;
   }
+  .menu-links-style {
+    background-color: transparent;
+    color: #1e1e1e;
+    border-radius: 2px;
+    padding: 5px 5px;
+    margin-right: 2px;
+    text-decoration: none;
+  }
   .menu-links {
     display: block;
-  }
-  .menu-contact {
-    background-color: #2c2c2c;
-    color: #f5f5f5;
-    border-radius: 5px;
-    padding: 5px 10px;
-    text-decoration: none;
+
+    .menu-contact {
+      background-color: #2c2c2c;
+      color: #f5f5f5;
+      border-radius: 5px;
+      padding: 5px 10px;
+      text-decoration: none;
+    }
   }
 }
