@@ -10,9 +10,6 @@
   .menu-links {
     display: none;
   }
-  .menu-contact {
-    display: none;
-  }
 }
 
 @media (min-width: 769px) {
@@ -21,13 +18,11 @@
     justify-content: space-between;
     align-items: center;
   }
+
   .menu-icon {
     display: none;
   }
   .menu-links {
-    display: block;
-  }
-  .menu-contact {
     display: block;
   }
 }
