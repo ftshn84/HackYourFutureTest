@@ -74,7 +74,7 @@
     }
 
     .main-title {
-      font-family: "YourHeroFont", sans-serif; /* from Title Hero/Font Family */
+      font-family: "Poppins", sans-serif; /* from Title Hero/Font Family */
       font-weight: 700; /* from Title Hero/Font Weight (Bold) */
       font-style: normal; /* Bold is weight, not style */
       font-size: 48px; /* replace with Title Hero/Size value */
@@ -85,23 +85,55 @@
     }
 
     .main-para {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
+      font-family: "Poppins", sans-serif; /* replace with actual font from Figma */
+      font-weight: 400; /* "Regular" = 400 */
+      font-style: normal; /* not italic */
+      font-size: 20px; /* replace with Subtitle/Size Base */
+      line-height: 120%; /* 1.2 × font-size */
+      letter-spacing: 0; /* no extra spacing */
+      text-align: center;
+      vertical-align: middle; /* only applies if inline/inline-block */
+      color: var(--Text-Utilities-Text-On-Overlay, #0c0c0d);
     }
 
     .main-button {
-      padding: 12px 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center; /* Align="Center" */
+      gap: 16px; /* gap between icon + label if used */
+      width: 154px; /* from spec */
+      height: 40px; /* from spec */
+      opacity: 1; /* fully visible */
+      transform: rotate(0deg); /* angle: 0 deg */
+
+      font-family: "Poppins", sans-serif;
+      font-weight: 600; /* Medium weight */
+      font-size: 14px; /* typical Medium size */
+      line-height: 120%;
+
+      background: #2c2c2c; /* Variant="Primary" default state */
+      color: #fff; /* text color */
       border: none;
-      background: #0073e6;
-      color: white;
-      font-size: 1rem;
-      border-radius: 6px;
+      border-radius: 8px; /* default radius */
       cursor: pointer;
-      transition: background 0.3s;
+      transition: background 0.2s ease, transform 0.1s ease;
     }
 
     .main-button:hover {
       background: #005bb5;
+    }
+    .main-button:active {
+      transform: translateY(1px);
+    }
+    .main-button:focus {
+      outline: 2px solid #9cc9ff;
+      outline-offset: 2px;
+    }
+    .main-button--end {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
     }
   }
 }
