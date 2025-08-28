@@ -10,6 +10,9 @@
   .menu-links {
     display: none;
   }
+  .menu-contact {
+    display: none;
+  }
 }
 
 @media (min-width: 769px) {
@@ -24,8 +27,7 @@
   .menu-links {
     display: block;
   }
-  .content-btn {
+  .menu-contact {
     display: block;
-    margin-right: 16px; /* Adjust as needed */
   }
 }
