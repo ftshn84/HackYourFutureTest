@@ -16,6 +16,9 @@
     margin-left: 10px;
     margin-top: 10px;
   }
+  /* ===============================
+     Hero Section
+    =============================== */
   .hiro-image {
     position: relative;
     width: 100%;
@@ -107,6 +110,9 @@
     margin-bottom: 5px;
     padding: 0 10px;
   }
+  /* ===============================
+     Panel-Image-Double
+    =============================== */
 }
 
 @media (min-width: 769px) {
@@ -242,5 +248,36 @@
     z-index: 1;
     width: 100%;
     padding: 0 10px;
+  }
+  /* ===============================
+     Panel-Image-Double
+  =============================== */
+  .Panel-Image-Double {
+    display: flex; /* put images side by side */
+    justify-content: center; /* center the images horizontally */
+    gap: 20px; /* space between images */
+    width: 100%;
+    padding: 40px; /* padding around images */
+    background: #d1e9f0; /* background for the panel */
+    border-radius: 10px; /* optional rounded corners */
+    box-sizing: border-box;
+    border-radius: 32px;
+    opacity: 80%;
+  }
+
+  .panel-image-left,
+  .panel-image-right {
+    flex: 1; /* each takes 50% width */
+    height: 100%;
+  }
+
+  .panel-image-left-style,
+  .panel-image-right-style {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills container while keeping ratio */
+    display: block;
+    border-radius: 5px; /* optional rounded corners */
+    padding: 0 5px; /* space between images */
   }
 }
