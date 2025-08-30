@@ -165,17 +165,18 @@
      info-section
     =============================== */
   .info-section {
-    width: 375px; /* fixed width from Figma */
-    height: 1067px; /* fixed height from Figma */
-    display: flex; /* enables gap to work */
-    flex-direction: column; /* likely stacked layout */
-    gap: 16px; /* space between children */
-    opacity: 1; /* fully visible */
-    padding: var(--space-600, 24px); /* Figma token → fallback in px */
-    transform: rotate(0deg); /* angle */
-    box-sizing: border-box; /* keeps padding inside width/height */
+    width: 100%; /* take full width of parent container */
+    max-width: 375px; /* optional: cap at Figma design width */
+    margin: 0 auto; /* center horizontally */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    opacity: 1;
+    padding: var(--space-600, 24px);
+    box-sizing: border-box;
     background-color: #ffffff;
   }
+
   .info-text {
     display: flex;
     flex-direction: column;
@@ -200,12 +201,22 @@
 
     text-align: left; /* center align for paragraphs */
   }
+  /* ===============================
+     Card Section
+    =============================== */
+  .card-cantainer {
+    display: flex;
+    flex-direction: column; /* stack cards vertically */
+    gap: 16px; /* vertical spacing between cards */
+    justify-content: flex-start; /* optional, aligns cards to top */
+    align-items: center; /* centers cards horizontally */
+  }
   .card {
     width: 327px;
     display: flex;
-    flex-direction: row; /* image left, body right */
-    align-items: flex-start; /* align image and text to top */
-    gap: 16px; /* space between image and text */
+    flex-direction: row; /* image left, text right */
+    align-items: flex-start;
+    gap: 16px;
     padding: 16px;
     box-sizing: border-box;
     background-color: #ffffff;
@@ -218,14 +229,14 @@
     height: 32px;
     object-fit: cover;
     border-radius: 8px;
-    flex-shrink: 0; /* keep image from shrinking */
+    flex-shrink: 0;
   }
 
   .card-body {
     display: flex;
-    flex-direction: column; /* stack title and text */
-    gap: 4px;
-    flex: 1; /* take remaining horizontal space */
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
   }
 
   .card-title {
