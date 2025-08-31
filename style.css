@@ -351,6 +351,7 @@
     width: 40px;
     height: 40px;
     align-self: flex-start; /* aligns image to the top left */
+    padding: 8px;
   }
 
   .testimonial-align {
@@ -366,6 +367,34 @@
     text-align: left;
     margin: 0;
     padding: 0;
+  }
+  .testimonial-name {
+    font-family: var(
+      --body-font-family,
+      "Poppins",
+      sans-serif
+    ); /* Body/Font Family */
+    font-weight: 600; /* Body/Font Weight Strong → usually 600 (Semi Bold) */
+    font-style: normal; /* Figma Semi Bold is weight, not style */
+    font-size: var(--body-size-medium, 16px); /* Body/Size Medium */
+    line-height: 140%; /* = 1.4 */
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #757575; /* Text/Utilities/Text Primary */
+  }
+  .testimonial-date {
+    font-family: var(
+      --body-font-family,
+      "Poppins",
+      sans-serif
+    ); /* Body/Font Family */
+    font-weight: 400; /* Body/Font Weight Regular */
+    font-style: normal; /* "Regular" is the default font style */
+    font-size: var(--body-size-medium, 14px); /* Body/Size Medium */
+    line-height: 140%; /* = 1.4 */
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #838383; /* Text/Utilities/Text Primary */
   }
 }
 
