@@ -396,6 +396,26 @@
     vertical-align: middle;
     color: #838383; /* Text/Utilities/Text Primary */
   }
+  .foter-background {
+    width: 375px;
+    height: 685px;
+    display: flex; /* needed if gap should work */
+    gap: 64px;
+    transform: rotate(0deg); /* angle */
+    opacity: 1;
+
+    /* Border */
+    border-top: 1px solid var(--border-default-default, #d9d9d9);
+
+    /* Padding */
+    padding-top: var(--space-600, 24px);
+    padding-right: var(--space-800, 32px);
+    padding-bottom: var(--space-600, 24px);
+    padding-left: var(--space-800, 32px);
+
+    /* Background */
+    background: var(--background-default-default, #ffffff);
+  }
 }
 
 @media (min-width: 769px) {
