@@ -268,17 +268,64 @@
      border-testimonials
     =============================== */
   .border-testimonials {
-    width: 375px;
+    width: fit-content;
     height: 670px;
-    display: flex; /* since you used gap, this assumes flex or grid */
-    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
     transform: rotate(0deg); /* angle */
     opacity: 1;
     border-radius: 16px;
     padding: var(
       --space-600
     ); /* Figma “Space/600” usually maps to a design token */
-    color: #d1e9f0;
+    background-color: #d1e9f0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .testimonial-card {
+    width: 327px;
+    height: 147px;
+    display: flex; /* needed if using gap */
+    gap: 6px;
+    flex-direction: column;
+    transform: rotate(0deg); /* Figma angle */
+    border-radius: 16px;
+    border-width: 1px;
+    border-color: #d9d9d9; /* Figma Stroke/Border → design token */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    box-sizing: border-box;
+    align-items: center;
+
+    padding: 16px;
+  }
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85px;
+    gap: 24px;
+  }
+  .testimonial-image {
+    width: 40px;
+    height: 40px;
+  }
+  .testimonial-card h3 {
+    margin: 0;
+    text-align: left; /* left-align the heading */
+  }
+
+  .testimonial-name-date {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0;
+    padding: 0;
   }
 }
 
