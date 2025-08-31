@@ -295,9 +295,7 @@
     transform: rotate(0deg); /* angle */
     opacity: 1;
     border-radius: 16px;
-    padding: var(
-      --space-600
-    ); /* Figma “Space/600” usually maps to a design token */
+    padding: 20px;
     background-color: #d1e9f0;
     position: relative;
     width: 100%;
@@ -309,7 +307,7 @@
     height: 147px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 16px;
     transform: rotate(0deg);
     border-radius: 16px;
     border-width: 1px;
@@ -327,6 +325,7 @@
     align-items: center;
     height: 85px;
     gap: 24px;
+    margin-bottom: 16px;
   }
   .testimonial-card {
     width: 327px;
