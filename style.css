@@ -174,32 +174,41 @@
     opacity: 1;
     padding: var(--space-600, 24px);
     box-sizing: border-box;
+    align-items: center;
     background-color: #ffffff;
   }
 
   .info-text {
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
-    gap: 8px; /* remove gap entirely, rely on margins */
+    align-items: center; /* centers the block itself */
+    gap: 8px; /* space between title and para */
+    text-align: center; /* centers text inside the block */
+
+    padding: 0 5px; /* optional: adds horizontal padding */
+    box-sizing: border-box;
   }
   .info-title {
     font-family: var(--heading-font-family, "Poppins", sans-serif);
     font-weight: 600;
     font-size: 24px;
-    line-height: 1.1; /* reduce line-height to tighten spacing */
-    margin: 0; /* remove default margin */
-    text-align: left; /* center align for headings */
+    line-height: 1.2;
+    margin: 0;
+    text-align: left;
+    align-items: center;
+    letter-spacing: -2%;
   }
   .info-para {
     font-family: var(--subheading-font-family, "Poppins", sans-serif);
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.1; /* reduce line-height to tighten spacing */
-    margin: 0; /* remove default margin */
+    line-height: 1.5;
+    margin: 0;
     color: #757575;
+    align-items: center;
 
-    text-align: left; /* center align for paragraphs */
+    text-align: left; /* lines align neatly */
+    max-width: 280px; /* optional: keeps it from stretching too wide */
   }
   /* ===============================
      Card Section
@@ -270,8 +279,6 @@
       --space-600
     ); /* Figma “Space/600” usually maps to a design token */
     color: #d1e9f0;
-  }
-  .testimonials-container {
   }
 }
 
