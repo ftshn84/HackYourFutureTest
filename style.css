@@ -231,7 +231,6 @@
     border-radius: 8px;
     flex-shrink: 0;
   }
-
   .card-body {
     display: flex;
     flex-direction: column;
@@ -255,6 +254,24 @@
     line-height: 140%;
     letter-spacing: 0;
     color: #757575;
+  }
+  /*==============================
+     border-testimonials
+    =============================== */
+  .border-testimonials {
+    width: 375px;
+    height: 670px;
+    display: flex; /* since you used gap, this assumes flex or grid */
+    gap: 24px;
+    transform: rotate(0deg); /* angle */
+    opacity: 1;
+    border-radius: 16px;
+    padding: var(
+      --space-600
+    ); /* Figma “Space/600” usually maps to a design token */
+    color: #d1e9f0;
+  }
+  .testimonials-container {
   }
 }
 
