@@ -14,7 +14,8 @@
   <body>
     <header class="menu-bar">
       <img class="menu-logo" src="images/Logo.png" alt="Logo" />
-      <img class="menu-icon" src="images/menu-bar.png" alt="Menu-icon" />
+        <img class="menu-icon" src="images/menu-bar.png" alt="Menu-icon" onclick="openMenu()" />
+
       <nav class="menu-links">
         <a class="menu-links-style" href="google.com">About</a>
         <a class="menu-links-style" href="yahoo.com">Courses</a>
@@ -22,6 +23,23 @@
         <a class="menu-contact" href="google.com">Contact</a>
       </nav>
     </header>
+    <!-- Mobile Overlay Menu -->
+      <div class="mobile-overlay" id="mobileMenu">
+        <div class="overlay-header">
+         <img src="images/Logo.png" alt="Logo" class="overlay-logo" />
+         <img src="images/close.png" alt="Close" class="overlay-close" onclick="closeMenu()" />
+       </div>
+
+       <div class="overlay-nav">
+         <a href="google.com">About</a>
+         <a href="yahoo.com">Courses</a>
+        <a href="msn.com">Shop</a>
+       </div>
+
+  <div class="overlay-footer">
+    <a href="google.com" class="overlay-contact">Contact</a>
+  </div>
+</div>
      <!-- hiro-image Double -->
     <section class="hiro-image">
       <img

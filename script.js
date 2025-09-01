@@ -1,11 +1,7 @@
-const openBtn = document.getElementById("openOverlay");
-const closeBtn = document.getElementById("closeOverlay");
-const overlay = document.getElementById("overlayPage");
+function openMenu() {
+  document.getElementById("mobileMenu").classList.add("show");
+}
 
-openBtn.addEventListener("click", () => {
-  overlay.style.display = "flex";
-});
-
-closeBtn.addEventListener("click", () => {
-  overlay.style.display = "none";
-});
+function closeMenu() {
+  document.getElementById("mobileMenu").classList.remove("show");
+}
