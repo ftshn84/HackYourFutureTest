@@ -175,6 +175,7 @@
     height: 524px; /* or any height you want for hero section */
     overflow: hidden;
     border-radius: 5px;
+    margin-top: 8px;
   }
 
   .background-image {
@@ -213,6 +214,7 @@
     padding: 0 10px;
   }
   .main-button {
+    margin-top: 25px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
