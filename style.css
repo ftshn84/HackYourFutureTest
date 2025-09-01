@@ -593,6 +593,9 @@
     line-height: 140%;
     letter-spacing: 0;
   }
+  .spaced {
+    margin-bottom: 6px;
+  }
   .footer-map {
     max-width: 310px;
     margin: 0 auto;
